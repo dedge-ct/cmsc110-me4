@@ -1,0 +1,38 @@
+.control-panel {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#article-1 {
+    background-color: red;
+    width: 100%;
+}
+
+#article-2 {
+    background-color: green;
+    float: left;
+    width: 60%;
+}
+
+#article-3 {
+    background-color: blue;
+    float: right;
+    width: 37%;
+    padding: 10px;
+}
+
+#article-4 {
+    background-color: yellow;
+    float: left;
+    width: 60%;
+}
+
+#article-5 {
+    background-color: violet;
+}
+
+#article-6 {
+    background-color: purple;
+}

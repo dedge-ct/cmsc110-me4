@@ -5,20 +5,24 @@
     width: 100%;
 }
 
+.article-title {
+    column-span: all;
+}
+
 #article-1-img {
     float: right; 
     display:block;
     width: 100%;
 }
 
-#article-1 .article-text {
+#article-1 .article-content {
     background-color: red;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 
-#article-1 .article-text {
+#article-1 .article-content {
     column-count: 4;
 }
 

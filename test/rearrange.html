@@ -8,14 +8,14 @@
 </head>
 <body>
     <div id="article-1">
-        <h3>Article 1</h3>
-        <p>This is article 1</p>
-        <img id="img-1" src="https://weeknumber.net/gfx/500x500/1.png" height="50px">
+        <h3 id="article-1-title">Article 1</h3>
+        <p id="article-1-body">This is article 1</p>
+        <img id="article-1-img"src="https://weeknumber.net/gfx/500x500/1.png" height="50px">
     </div>
     <div id="article-2">
-        <h3>Article 2</h3>
-        <p>This is article 2</p>
-        <img id="img-2" src="https://weeknumber.net/gfx/500x500/2.png" height="50px">
+        <h3 id="article-2-title">Article 2</h3>
+        <p id="article-2-body">This is article 2</p>
+        <img id="article-2-img"src="https://weeknumber.net/gfx/500x500/2.png" height="50px">
     </div>
     <div id="article-3">
         <h3>Article 3</h3>
@@ -37,8 +37,35 @@
         <p>This is article 6</p>
         <img src="https://weeknumber.net/gfx/500x500/6.png" height="50px">
     </div>
-    <div id="Selector">
-        <button onclick="switchArticle()">Switch 1 and 2</button>
+    <div id="Selectors">
+        <label for="select-article-1">Choose First Article</label>
+        <select id="select-article-1">
+            <option value="article-1">Article 1</option>
+            <option value="article-2">Article 2</option>
+            <option value="article-3">Article 3</option>
+            <option value="article-4">Article 4</option>
+            <option value="article-5">Article 5</option>
+            <option value="article-6">Article 6</option>
+        </select>
+        <label for="select-article-2">Choose Second Article</label>
+        <select id="select-article-2">
+            <option value="article-1">Article 1</option>
+            <option value="article-2">Article 2</option>
+            <option value="article-3">Article 3</option>
+            <option value="article-4">Article 4</option>
+            <option value="article-5">Article 5</option>
+            <option value="article-6">Article 6</option>
+        </select>
+        <label for="select-article-3">Choose Third Article</label>
+        <select id="select-article-3">
+            <option value="article-1">Article 1</option>
+            <option value="article-2">Article 2</option>
+            <option value="article-3">Article 3</option>
+            <option value="article-4">Article 4</option>
+            <option value="article-5">Article 5</option>
+            <option value="article-6">Article 6</option>
+        </select>
+        <button onclick="changeArticleOrder()">Submit</button>
     </div>
     <script src="rearrange.js"></script>
 </body>

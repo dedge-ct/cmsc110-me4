@@ -1,5 +1,11 @@
 var isSequential = false;
 var themeCounter = 0;
+var origArticlesWidth = [];
+
+var origArticle1 = {title: document.getElementById("article-1-title")}
+
+
+
 
 function changeView() {
     var btn = document.getElementById("change-view");
@@ -10,6 +16,7 @@ function changeView() {
     }
     else {
         btn.innerHTML = "Layout: Columned";
+        changeToColumned();
         isSequential = false;
     }
 
@@ -53,9 +60,16 @@ function reorderArticles() {
 }
 
 function changeToSequential() {
-    articles = document.getElementsByClassName("articles");
+    var articles = document.getElementsByClassName("articles");
     for (let i = 0; i < articles.length; i++) {
+        origArticlesWidth.push(articles[i].style.width)
         articles[i].style.width = "100%";
-        articles[i].style.margin = "5px";
+    }
+}
+
+function changeToColumned() {
+    var articles = document.getElementsByClassName("articles");
+    for (let i = 0; i<articles.length;i++) {
+        articles[i].style.width = origArticlesWidth[i];
     }
 }

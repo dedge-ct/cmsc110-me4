@@ -1,3 +1,16 @@
 #article-1 img {
     width: 50%;
 }
+
+
+#menu-selector {
+    background-color: lightblue;
+    position: fixed;
+    width: 500px;
+    height:300px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

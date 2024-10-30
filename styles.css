@@ -1,3 +1,7 @@
+p {
+    word-wrap: break-word;
+}
+
 .control-panel {
     background-color: gray;
     font-size: 20px;
@@ -84,12 +88,33 @@
     display: inline-block;
 }
 
-.article-title {
+.article-title, .article-author {
     column-span: all;
+    margin: 5px;
+}
+
+.articles {
+    margin: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.articles .article-content {
+    padding: 10px;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
 }
 
 #article-1 {
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
     border-style: solid;
+    border-color: lightgray;
 }
 
 #menu-label {
@@ -104,55 +129,75 @@
     width: 70%;
 }
 
+#article-1 .article-title {
+    font-size: 50px;
+}
+
 #article-1 .article-content {
     width: 100%;
     height: auto;
     column-count: 4;
     padding:10px;
+    text-overflow: ellipsis;
 }
 
 #article-2 {
-    background-color: green;
+    background-color: white;
     float: left;
-    width: 75%;
-    height: 250px;
+    width: 74%;
+    height: 244px;
 }
 
 #article-2 .article-content {
     column-count: 3;
+    overflow: hidden;
 }
 
 #article-2-img {
-    column-span: 2;
-    width: 200%;
     max-height: 200px;
+    width: 280px;
+    display: block;
+    float: right;
+    margin: 10px;
 }
 
 #article-3 {
-    background-color: blue;
     float: right;
-    width: 25%;
-    height: 100%;
+    width: 24%;
+    height: 500px;
 }
 
 #article-3-img {
-    width: 100%;
-    max-height: 200px;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    max-height: 150px;
 }
 
 #article-4 {
     background-color: yellow;
     float: left;
-    width: 75%;
+    width: 74%;
+    height: 244px;
 }
 
 #article-4 .article-content {
     column-count: 3;
 }
 
+#article-4-img {
+    max-height: 150px;
+    width: 300px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
 #article-5 {
     background-color: violet;
-    width: 50%;
+    width: 49%;
     float: left;
 
 }
@@ -163,7 +208,7 @@
 
 #article-6 {
     background-color: purple;
-    width: 50%;
+    width: 49%;
     float: right;
 }
 

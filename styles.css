@@ -1,7 +1,3 @@
-p {
-    word-wrap: break-word;
-}
-
 .control-panel {
     background-color: gray;
     font-size: 20px;
@@ -24,13 +20,19 @@ p {
     
 }
 
+img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
 .customize-button:hover {
     background-color: darkgray;
 }
 
 #change-order {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #article-order-menu {
@@ -58,6 +60,17 @@ p {
     font-size: 20px;
 }
 
+#default-order {
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+#close-order-menu {
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 .article-dropdown {
     float: right;
     font-size: 20px;
@@ -80,15 +93,15 @@ p {
 }
 
 #change-theme {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .customize-option {
     display: inline-block;
 }
 
-.article-title, .article-author {
+.article-author {
     column-span: all;
     margin: 5px;
 }
@@ -97,12 +110,27 @@ p {
     margin: 4px;
     border-style: solid;
     border-width: 2px;
-    border-color: lightgray;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: gray;
+    box-shadow: 2px 4px gray;
 }
 
 .articles .article-content {
     padding: 10px;
+}
+
+.article-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#article-1 .article-title {
+    font-size: 100px;
+    margin: 10px;
+}
+
+.article-title:hover {
+    color: blue;
 }
 
 .article-body {
@@ -111,10 +139,9 @@ p {
 }
 
 #article-1 {
-    background-color: #f7f7f7;
     margin-bottom: 5px;
     border-style: solid;
-    border-color: lightgray;
+    box-shadow: 2px 4px gray;
 }
 
 #menu-label {
@@ -126,11 +153,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     display:block;
-    width: 70%;
-}
-
-#article-1 .article-title {
-    font-size: 50px;
+    width: 750px;
 }
 
 #article-1 .article-content {
@@ -177,26 +200,26 @@ p {
 }
 
 #article-4 {
-    background-color: yellow;
+    background-color: white;
     float: left;
     width: 74%;
     height: 244px;
 }
 
-#article-4 .article-content {
-    column-count: 3;
+#article-4-img {
+    float: left;
+    height: 160px;
+    width: auto;
+    margin: 10px;
 }
 
-#article-4-img {
-    max-height: 150px;
-    width: 300px;
-    display: block;
-    float: left;
+#article-4 .article-body-div {
+    column-count: 2;
     margin: 10px;
 }
 
 #article-5 {
-    background-color: violet;
+    background-color: white;
     width: 49%;
     float: left;
 
@@ -207,9 +230,10 @@ p {
 }
 
 #article-6 {
-    background-color: purple;
+    background-color: white;
     width: 49%;
     float: right;
+    margin-bottom: 60px;
 }
 
 #article-6 .article-content {

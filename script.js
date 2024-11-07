@@ -141,6 +141,7 @@ function defaultOrder() {
         const title = article.querySelector(".article-title");
         if (title) {
             title.textContent = originalNews.titleText;
+            title.href = originalNews.linkText;
         }
         // Restore author
         const author = article.querySelector(".article-author");
@@ -151,12 +152,6 @@ function defaultOrder() {
         const info = article.querySelector(".article-body");
         if (info) {
             info.textContent = originalNews.infoText;
-        }
-        // Restore link
-        const link = article.querySelector("a");
-        if (link) {
-            link.href = originalNews.linkHref;
-            link.textContent = originalNews.linkText;
         }
     });
 
@@ -171,6 +166,8 @@ function changeToSequential() {
         articles[i].style.width = "100%";
         articles[i].style.float = "left";
     }
+    document.getElementById("article-2-3-4").style.display = "inline";
+    document.getElementById("article-5-6").style.display = "inline";
 }
 
 function changeToColumned() {
@@ -179,4 +176,6 @@ function changeToColumned() {
         articles[i].style.width = origArticlesWidth[i];
         articles[i].style.float = origArticlesFloat[i];
     }
+    document.getElementById("article-2-3-4").style.display = "flex";
+    document.getElementById("article-5-6").style.display = "flex";
 }

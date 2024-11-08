@@ -3,17 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1 Headline</title>
+    <title>Marce will reach typhoon category by Nov 5, PAGASA says</title>
+    <link href="articles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="header"></div>
-    <div class="article-content">
-        <img class="article-img">
-        <caption class="article-img-caption">Dog</caption>
-        <h2 class="article-title">Article 1</h2>
-        <h5 class="article-author">By: author</h5>
-        <p class="article-opening">This si the moss</p>
-        <p class="article-body">Blhhah shtkhgfkafgblalh </p>
+
+    <div class="header">
+        <h1 class="newspaper-title">The Outdrop Bulletin</h1>
     </div>
+    <div class="article">
+        <h3 class="article-category">Headline | News</h3>
+        <h2 class="article-title">Marce will reach typhoon category by Nov 5, PAGASA says</h2>
+        <h4 class="article-author">By: Jown Manalo  |  INQUIRER.NET</h4>
+        <img class="article-img" src="https://images.gmanews.tv/webpics/2024/11/465649596_986818710156449_4231268515931295938_n_2024_11_05_10_12_06.jpg" alt="PAGASA Forecast of Marce">
+        <div class="article-img-caption">Typhoon Marce as of 10:00 a.m. on November 5, 2024.</div>
+        <p class="article-opening">Severe Tropical Storm Marce (international name: Yinxing) slightly intensified on Tuesday morning, bringing it closer to typhoon status, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa).</p>
+        <p class="article-body">
+            “Marce may further strengthen today and reach the typhoon category until it exits our Philippine area of responsibility (PAR),” Pagasa weather specialist Rhea Torres said in mixed Filipino and English during a press briefing.
+            <br><br>
+            In a 5 a.m. bulletin, the state weather agency said Marce was last spotted 735 kilometers (km) east of Baler, Aurora. It was packing maximum sustained winds of 110 kilometers per hour (kph) near the center and gusts of up to 135 kph.
+            <br><br>
+            Marce was moving northwestward at 25 kph, it added.
+            <br><br>
+            Based on the state weather bureau's track forecast, Marce will move generally northwestward until Wednesday morning (November 6) before decelerating and turning westward over the Philippine Sea, east of extreme northern Luzon.
+            <br><br>
+            “Marce may make landfall in the vicinity of Babuyan Islands or over the northern portion of mainland Cagayan on Thursday evening or Friday early morning,” Pagasa said.
+            <br><br>
+            According to Torres, the radius of Marce is wide and will cover some portions of northern Luzon. She also said that the storm will gradually approach the Philippine landmass.
+        </p>
+        <div class="article-reference">Click this <a href="https://newsinfo.inquirer.net/2001267/marce-seen-to-reach-typhoon-category-nov-5-says-pagasa">link</a> to view the original source of the article.</div>
+    </div>
+    <br><br><br>
+
+    <div class="control-panel">
+        <div class="customize-option" id="menu-label">
+            Main Menu
+        </div>
+        <div class="customize-option" id="change-view-div">
+            <button class="customize-button" id="change-view" onclick="changeView()">Layout: Columned</button>
+        </div>
+        <div class="customize-option" id="change-order-div">
+            <button class="customize-button" id="change-order" onclick="openOrderMenu()">Article Order</button>
+        </div>
+
+        <div class="customize-option" id="change-theme-div">
+            <button class="customize-button" id="change-theme" onclick="changeTheme()">Theme: Classic</button>
+        </div>
+    </div>
+
+    <script src="articles.js"></script>
 </body>
 </html>

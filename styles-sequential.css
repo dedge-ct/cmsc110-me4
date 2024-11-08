@@ -3,7 +3,7 @@
     font-size: 20px;
     position: fixed;
     bottom: 0;
-    width: 650px;
+    width: 670px;
     height: 50px;
     margin: auto;
     right: 0;
@@ -107,7 +107,6 @@ img {
     padding-right: 13px;
 }
 
-
 .customize-option {
     display: inline-block;
     max-width:30%;
@@ -139,8 +138,9 @@ img {
     border-width: 2px;
     border-color: gray;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100;
+    width: 100%;
     border-radius: 20px;
+
 }
 
 .articles .article-content {
@@ -197,7 +197,7 @@ img {
 #article-1-img {
     margin-left: auto;
     margin-right: auto;
-    display:block;
+    display: block;
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -225,7 +225,7 @@ img {
 
 #article-2 {
     background-color: white;
-    height: 270px;
+    height: 210px;
     margin-bottom: 8px;
 }
 
@@ -249,8 +249,8 @@ img {
 }
 
 .article-img {
-    height: 150px;
-    width: 250px;
+    height: 100px;
+    width: 200px;
     margin: 10px;
     object-fit: cover;
 }
@@ -258,7 +258,7 @@ img {
 #article-3 {
     float:left;
     background-color: white;
-    height: 270px;
+    height: 225px;
 }
 
 #article-3 .article-title {
@@ -279,7 +279,7 @@ img {
 
 #article-4 {
     float:left;
-    height: 270px;
+    height: 210px;
 }
 
 #article-4 .article-title {
@@ -294,7 +294,7 @@ img {
 
 #article-4 .article-body-div {
     margin: 10px;
-    width: 78%;
+    width: 81%;
     float: right;
 }
 
@@ -306,7 +306,7 @@ img {
     background-color: white;
     float: left;
     padding-bottom: 10px;
-    height: 270px;
+    height: 210px;
 }
 
 #article-5 .article-title {
@@ -316,14 +316,13 @@ img {
 
 #article-5 .article-author {
     margin-top: 10px;
-    margin-bottom: 10px;
     font-size: 16px;
 }
 
 
 #article-5 .article-body-div {
     margin: 10px;
-    width: 77%;
+    width: 81%;
     float: left;
 
 }
@@ -336,7 +335,7 @@ img {
     background-color: white;
     float:left;
     padding-bottom: 10px;
-    height: 270px;
+    height: 210px;
 }
 
 #article-6 .article-title {
@@ -351,7 +350,7 @@ img {
 
 #article-6 .article-body-div {
     margin: 10px;
-    width: 77%;
+    width: 81%;
     float: right;
 
 }

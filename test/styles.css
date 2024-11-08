@@ -3,7 +3,7 @@
     font-size: 20px;
     position: fixed;
     bottom: 0;
-    width: 650px;
+    width: 45%;
     height: 50px;
     margin: auto;
     right: 0;
@@ -22,12 +22,8 @@
 
 img {
     display: block;
-}
-
-.article-img {
-    border-radius: 15px;
-    box-shadow: 2px 2px grey;
-    
+    width: 50%;
+    margin: auto;
 }
 
 .customize-button:hover {
@@ -97,37 +93,16 @@ img {
 }
 
 #change-theme {
-    width: 100%;
-    padding-left: 38px;
-    padding-right: 39px;
-}
-
-#change-view {
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .customize-option {
     display: inline-block;
-    max-width:30%;
-    margin: 0;
 }
-
-.header {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-
-}
-
-#newspaper-title {
-    font-size: 48px;
-    margin-bottom: 0px;
-}
-
-
 
 .article-author {
+
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -139,7 +114,6 @@ img {
     border-width: 2px;
     border-color: gray;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
 }
 
 .articles .article-content {
@@ -169,12 +143,10 @@ img {
     box-shadow: 2px 4px gray;
 }
 
-#article-1 .article-title-div {
-    margin-left: 20px;
-}
 
 #article-1 .article-title {
     font-size: 72px;
+    margin-left: 20px;
 }
 
 #article-1 .article-author {
@@ -198,7 +170,6 @@ img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    border-radius: 18px;
     margin-bottom: 10px;
 }
 
@@ -264,6 +235,7 @@ img {
     margin-bottom: 5px;
     font-size: 16px;
 }
+
 
 #article-3 .article-body-div {
     margin: 10px;

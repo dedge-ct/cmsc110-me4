@@ -1,18 +1,21 @@
 var isSequential = false;
-var themeCounter = 0;
+var themeCounter = 1;
 var origArticlesWidth = [];
 var origArticlesFloat = [];
-
 
 function changeView() {
     var btn = document.getElementById("change-view");
     if (!isSequential) {
         btn.innerHTML = "Layout: Sequential";
+        btn.style.paddingLeft = "10px";
+        btn.style.paddingLeft = "10px";
         changeToSequential();
         isSequential = true;
     }
     else {
         btn.innerHTML = "Layout: Columned";
+        btn.style.paddingLeft = "13px";
+        btn.style.paddingRight = "13px";
         changeToColumned();
         isSequential = false;
     }
@@ -32,17 +35,36 @@ function changeTheme() {
     themeCounter++;
     switch (themeCounter) {
         case 1:
-            themeButton.innerHTML = "Theme: Cascade";
+            themeButton.innerHTML = "Theme: Classic";
+            themeButton.style.paddingLeft = "38px";
+            themeButton.style.paddingRight = "39px";
             break;
         case 2:
             themeButton.innerHTML = "Theme: Soundcheck";
+            themeButton.style.paddingLeft = "20px";
+            themeButton.style.paddingRight = "20px";
+            changeToSoundcheck();
             break;
         default:
             themeCounter = 0;
-            themeButton.innerHTML = "Theme: Vegas"
+            themeButton.innerHTML = "Theme: Vegas";
+            themeButton.style.paddingLeft = "42px";
+            themeButton.style.paddingRight = "42px";
+            changeToVegas();
             break;
     }
 }
+
+function changeToSoundcheck() {
+    document.getElementById("article-2").style.backgroundColor = "violet";
+}
+
+function changeToVegas() {
+    document.getElementById("article-2").style.backgroundColor = "green";
+}
+
+
+
 
 // Store each article's original content, including links, when the page loads
 const originalContentMap = {};
@@ -159,23 +181,9 @@ function defaultOrder() {
 }
 
 function changeToSequential() {
-    var articles = document.getElementsByClassName("articles");
-    for (let i = 0; i < articles.length; i++) {
-        origArticlesWidth.push(articles[i].style.width);
-        origArticlesFloat.push(articles[i].style.float);
-        articles[i].style.width = "100%";
-        articles[i].style.float = "left";
-    }
-    document.getElementById("article-2-3-4").style.display = "inline";
-    document.getElementById("article-5-6").style.display = "inline";
+    document.getElementById("css-link").href = "styles-sequential.css";
 }
 
 function changeToColumned() {
-    var articles = document.getElementsByClassName("articles");
-    for (let i = 0; i<articles.length;i++) {
-        articles[i].style.width = origArticlesWidth[i];
-        articles[i].style.float = origArticlesFloat[i];
-    }
-    document.getElementById("article-2-3-4").style.display = "flex";
-    document.getElementById("article-5-6").style.display = "flex";
+    document.getElementById("css-link").href = "styles.css";
 }

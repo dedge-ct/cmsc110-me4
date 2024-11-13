@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 * {
     color: #121212;
 }
@@ -6,6 +8,8 @@ html, body {
     background-color: #F5F5F5;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat";
+    background-image: none;
 
 }
 
@@ -16,8 +20,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 0;
+    border-style: solid;
+    border-color: #808080;
 }
+
 .newspaper-title {
     color: #F5F5F5;
 }

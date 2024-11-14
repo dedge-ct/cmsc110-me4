@@ -1,7 +1,4 @@
-var isSequential = false;
 var themeCounter = 1;
-var origArticlesWidth = [];
-var origArticlesFloat = [];
 
 function changeTheme() {
     var themeButton = document.getElementById("change-theme");
@@ -11,6 +8,7 @@ function changeTheme() {
             themeButton.innerHTML = "Theme: Classic";
             themeButton.style.paddingLeft = "38px";
             themeButton.style.paddingRight = "39px";
+            changeToClassic();
             break;
         case 2:
             themeButton.innerHTML = "Theme: Soundcheck";
@@ -27,36 +25,18 @@ function changeTheme() {
             break;
     }
 }
+function changeToClassic() {
+    document.getElementById("newspaper").style.backgroundImage = "url(../Pictures/classic_bg_light.png)"
+}
 
 function changeToSoundcheck() {
-    if (isSequential == true){
-        var art1 = document.getElementById("article-1");
-        art1.style.background = "linear-gradient(to bottom, #000000, #FFFFFF)";
-        var art2 = document.getElementById("article-2");
-        art2.style.background = "linear-gradient(to bottom, #842493, #5D2A9D)";
-        var art3 = document.getElementById("article-3");
-        art3.style.background = "linear-gradient(to bottom, #5D2A9D, #386D7F)";
-        var art4 = document.getElementById("article-4");
-        art4.style.background = "linear-gradient(to bottom, #842493, #5D2A9D, #386D7F)";
-        var art5 = document.getElementById("article-5");
-        art5.style.background = "linear-gradient(to bottom, #386D7F, #329029)";
-        var art6 = document.getElementById("article-6");
-        art6.style.background = "linear-gradient(to bottom, #386D7F, #329029)";
-    }
-    else {
-        var art1 = document.getElementById("article-1");
-        art1.style.background = "linear-gradient(to bottom, #000000, #bf6e2a, #842493)";
-        var art2 = document.getElementById("article-2");
-        art2.style.background = "linear-gradient(to bottom, #842493, #5D2A9D)";
-        var art3 = document.getElementById("article-3");
-        art3.style.background = "linear-gradient(to bottom, #5D2A9D, #386D7F)";
-        var art4 = document.getElementById("article-4");
-        art4.style.background = "linear-gradient(to bottom, #842493, #5D2A9D, #386D7F)";
-        var art5 = document.getElementById("article-5");
-        art5.style.background = "linear-gradient(to bottom, #386D7F, #329029)";
-        var art6 = document.getElementById("article-6");
-        art6.style.background = "linear-gradient(to bottom, #386D7F, #329029)";
-    }
+    document.getElementById("article-div").style.background = "linear-gradient(to bottom, #481359, #842493, #5D2A9D, #293496, #386D7F, #2F847C, #329029)";
+    document.getElementById("newspaper").style.backgroundImage = "url(https://i.pinimg.com/736x/ef/54/1d/ef541d77ae2d420ad13c4b182d1d7600.jpg)";
+}
+
+function changeToVegas() {
+    document.getElementById("article-div").style.background = "linear-gradient(to bottom, #73D8CA, #6499B9, #A080E1, #DEB3CB, #F5A4C5, #E5CCF4, #DDD5DC)";
+    document.getElementById("newspaper").style.backgroundImage = "url(https://i.pinimg.com/736x/ef/54/1d/ef541d77ae2d420ad13c4b182d1d7600.jpg)";
 }
 
 function changeView() {
@@ -66,3 +46,4 @@ function changeView() {
 function openOrderMenu() {
     alert("This feature is not available for individual articles.");
 }
+

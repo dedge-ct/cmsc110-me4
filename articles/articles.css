@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 * {
     color: #121212;
@@ -13,7 +17,7 @@ html, body {
 }
 
 body {
-    background-image: url(../Pictures/classic_bg_light.png);
+    background-image: url(../Pictures/classic_bg.jpg);
 }
 
 .header {     
@@ -30,16 +34,18 @@ body {
 
 .newspaper-title {
     color: black;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .article {
     width: 75%;
     margin-top: 15px;
     border-style: solid;
+    border-color: #2e4646;
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../Pictures/classic_bg_light.png);
 }
 
 .article-category {
@@ -68,7 +74,7 @@ body {
 .article-img-caption {
     margin-top: 10px;
     font-size: 18px;
-    color: #808080;
+    color: #595959;
 }
 
 .article-opening {

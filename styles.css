@@ -1,3 +1,4 @@
+/*Import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
@@ -21,7 +22,6 @@ img {
 
 
 /*Control Panel*/
-
 .control-panel {
     background-color:#385959;
     font-size: 20px;
@@ -144,8 +144,9 @@ img {
     z-index: 5000;
 }
 
-/*Newspaper Content*/
+/*NEWSPAPER CONTENT*/
 
+/*Header*/
 .header-div {
     display: flex;
     flex-direction: column;
@@ -188,12 +189,6 @@ img {
     background-position: bottom;
 }
 
-
-#all-articles-div {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 #newspaper-title {
     font-size: 90px;
     margin: 5px;
@@ -204,6 +199,11 @@ img {
     margin: 10px;
 }
 
+/*General article css*/
+#all-articles-div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .article-img {
     border-radius: 15px;
@@ -291,6 +291,7 @@ img {
 
 /*Article 2*/
 
+/*Uses flexbox in order for stacked article 2,3 and article 4 to have same height*/
 #article-2-3-4 {
     display: inline-flex;
 
@@ -383,8 +384,11 @@ img {
     object-fit: cover;
 }
 
+/*Uses flexbox in order for article 5 and 6 to have same height*/
+#article-5-6 {
+    display: inline-flex;
+}
 /*Article 5*/
-
 #article-5 {
     background-color: white;
     width: 50%;
@@ -445,8 +449,4 @@ img {
 
 #article-6-img {
     float: right;
-}
-
-#article-5-6 {
-    display: inline-flex;
 }

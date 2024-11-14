@@ -7,6 +7,7 @@
     <link id="css-link" href="styles.css" type="text/css" rel="stylesheet">
 </head>
 <body id="newspaper">
+    <!--Header and Title-->
     <div class="header-div">
         <div class="header" id="news-header">
             <h1 id="newspaper-title">The Outdrop Bulletin</h1>
@@ -115,6 +116,7 @@
         <div class="customize-option" id="change-view-div">
             <button class="customize-button" id="change-view" onclick="changeView()">Layout: Columned</button>
         </div>
+        
         <div class="customize-option" id="change-order-div">
             <button class="customize-button" id="change-order" onclick="openOrderMenu()">Article Order</button>
         </div>
@@ -127,6 +129,7 @@
     <div id="article-order-menu">
         <div id="article-order-selector">
             <div class="select-article">Choose 1st Article: 
+                <!--Ask the user for the new order-->
                 <select class="article-dropdown" id="article1">
                     <option value="0">Select article</option>
                     <option value="1">1. Headline</option>

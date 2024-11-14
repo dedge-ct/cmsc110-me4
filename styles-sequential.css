@@ -1,5 +1,9 @@
+/*Import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 html, body {
     margin: 0;
@@ -140,8 +144,9 @@ img {
     z-index: 5000;
 }
 
-/*Newspaper Content*/
+/*NEWSPAPER CONTENT*/
 
+/*Header*/
 .header-div {
     display: flex;
     flex-direction: column;
@@ -184,7 +189,7 @@ img {
     background-position: bottom;
 }
 
-
+/*General article css*/
 #all-articles-div {
     padding-left: 20px;
     padding-right: 32px;
